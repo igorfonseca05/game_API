@@ -1,0 +1,433 @@
+[
+    {
+        "id": "1",
+        "nome": "Grand Theft Auto V",
+        "descrição": "Grand Theft Auto V é um jogo de ação e aventura em mundo aberto.",
+        "tags": ["Ação", "Aventura", "Mundo Aberto", "Crime", "Sandbox"],
+        "plataforma": "PC",
+        "preço": "R$ 59,99"
+      },
+      {
+        "id": "2",
+        "nome": "Rust",
+        "descrição": "Rust é um jogo de sobrevivência multiplayer em um mundo aberto.",
+        "tags": ["Sobrevivência", "Sandbox", "Multiplayer", "Open World", "Crafting"],
+        "plataforma": "PC",
+        "preço": "R$ 74,99"
+      },
+      {
+        "id": "3",
+        "nome": "PlayerUnknown's Battlegrounds",
+        "descrição": "PlayerUnknown's Battlegrounds é um jogo de battle royale multiplayer.",
+        "tags": ["Battle Royale", "Shooter", "Multiplayer", "Survival", "Action"],
+        "plataforma": "PC",
+        "preço": "R$ 56,99"
+      },
+      {
+        "id": "4",
+        "nome": "Destiny 2",
+        "descrição": "Destiny 2 é um jogo de tiro em primeira pessoa online com elementos de MMO.",
+        "tags": ["FPS", "MMO", "Sci-Fi", "Co-op", "Loot Shooter"],
+        "plataforma": "PC",
+        "preço": "Grátis (Free-to-Play)"
+      },
+      {
+        "id": "5",
+        "nome": "FIFA 22",
+        "descrição": "FIFA 22 é um jogo de simulação de futebol da série FIFA.",
+        "tags": ["Esportes", "Futebol", "Simulação", "Multiplayer"],
+        "plataforma": "PC",
+        "preço": "R$ 199,99"
+      },
+      {
+        "id": "6",
+        "nome": "F1 2022",
+        "descrição": "F1 2022 é um jogo de corrida de Fórmula 1.",
+        "tags": ["Corrida", "Fórmula 1", "Simulação", "Singleplayer", "Multiplayer"],
+        "plataforma": "PC",
+        "preço": "R$ 249,99"
+      },
+      {
+        "id": "7",
+        "nome": "Call of Duty: Modern Warfare",
+        "descrição": "Call of Duty: Modern Warfare é um jogo de tiro em primeira pessoa da série Call of Duty.",
+        "tags": ["FPS", "Guerra", "Multiplayer", "Campanha", "Realista"],
+        "plataforma": "PC",
+        "preço": "R$ 199,99"
+      },
+      {
+        "id": "8",
+        "nome": "Death Stranding",
+        "descrição": "Death Stranding é um jogo de ação e aventura em mundo aberto.",
+        "tags": ["Ação", "Aventura", "Mundo Aberto", "Sci-Fi"],
+        "plataforma": "PC",
+        "preço": "R$ 199,99"
+      },
+      {
+        "id": "9",
+        "nome": "Red Dead Redemption 2",
+        "descrição": "Red Dead Redemption 2 é um épico conto de Arthur Morgan e da gangue Van der Linde, lutando contra as forças da civilização, enquanto tentam sobreviver no velho oeste americano.",
+        "tags": ["Ação", "Aventura", "Mundo Aberto", "Western"],
+        "plataforma": "PC",
+        "preço": "R$ 199,99"
+      },
+    {
+      "id": 10,
+      "title": "Cyberpunk 2077",
+      "description": "Cyberpunk 2077 is an open-world action-adventure game developed and published by CD Projekt.",
+      "tags": ["Action", "RPG", "Open World"],
+      "link": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/"
+    },
+    {
+      "id": 11,
+      "title": "The Witcher 3: Wild Hunt",
+      "description": "The Witcher 3: Wild Hunt is an open-world action role-playing game developed and published by CD Projekt.",
+      "tags": ["Action", "RPG", "Open World"],
+      "link": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
+    },
+    {
+      "id": 12,
+      "title": "Counter-Strike: Global Offensive",
+      "description": "Counter-Strike: Global Offensive is a multiplayer first-person shooter developed and published by Valve.",
+      "tags": ["Action", "Multiplayer", "Shooter"],
+      "link": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
+    },
+    {
+      "id": 13,
+      "title": "Among Us",
+      "description": "Among Us is an online multiplayer social deduction game developed and published by InnerSloth.",
+      "tags": ["Multiplayer", "Social Deduction", "Indie"],
+      "link": "https://store.steampowered.com/app/945360/Among_Us/"
+    },
+    {
+      "id": 14,
+      "title": "Fall Guys: Ultimate Knockout",
+      "description": "Fall Guys: Ultimate Knockout is a multiplayer party game developed by Mediatonic and published by Devolver Digital.",
+      "tags": ["Multiplayer", "Party", "Indie"],
+      "link": "https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/"
+    },
+    {
+      "id": 15,
+      "title": "The Elder Scrolls V: Skyrim",
+      "description": "The Elder Scrolls V: Skyrim is an open-world action role-playing game developed and published by Bethesda Softworks.",
+      "tags": ["Action", "RPG", "Open World"],
+      "link": "https://store.steampowered.com/app/72850/The_Elder_Scrolls_V_Skyrim/"
+    },
+    {
+      "id": 16,
+      "title": "Rocket League",
+      "description": "Rocket League is a vehicular soccer video game developed and published by Psyonix.",
+      "tags": ["Sports", "Racing", "Multiplayer"],
+      "link": "https://store.steampowered.com/app/252950/Rocket_League/"
+    },
+    {
+      "id": 17,
+      "title": "Terraria",
+      "description": "Terraria is an action-adventure sandbox game developed by Re-Logic.",
+      "tags": ["Action", "Adventure", "Sandbox"],
+      "link": "https://store.steampowered.com/app/105600/Terraria/"
+    },
+    {
+      "id": 18,
+      "title": "Minecraft",
+      "description": "Minecraft is a sandbox video game developed and published by Mojang Studios.",
+      "tags": ["Sandbox", "Survival", "Indie"],
+      "link": "https://store.steampowered.com/app/244850/Minecraft/"
+    },
+    {
+      "id": 19,
+      "title": "Portal 2",
+      "description": "Portal 2 is a puzzle-platform game developed and published by Valve.",
+      "tags": ["Puzzle", "Platformer", "Co-op"],
+      "link": "https://store.steampowered.com/app/620/Portal_2/"
+    },
+    {
+      "id": 20,
+      "title": "DOOM Eternal",
+      "description": "DOOM Eternal is a first-person shooter game developed by id Software and published by Bethesda Softworks.",
+      "tags": ["Action", "Shooter", "Singleplayer"],
+      "link": "https://store.steampowered.com/app/782330/DOOM_Eternal/"
+    },
+    {
+      "id": 21,
+      "title": "Sid Meier's Civilization VI",
+      "description": "Sid Meier's Civilization VI is a turn-based strategy game developed by Firaxis Games and published by 2K Games.",
+      "tags": ["Strategy", "Turn-Based", "4X"],
+      "link": "https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/"
+    },
+    {
+      "id": 22,
+      "title": "Garry's Mod",
+      "description": "Garry's Mod is a sandbox game developed and published by Facepunch Studios.",
+      "tags": ["Sandbox", "Moddable", "Multiplayer"],
+      "link": "https://store.steampowered.com/app/4000/Garrys_Mod/"
+    },
+    {
+      "id": 23,
+      "title": "Stardew Valley",
+      "description": "Stardew Valley is a simulation role-playing game developed by ConcernedApe and published by Chucklefish.",
+      "tags": ["Simulation", "RPG", "Farming"],
+      "link": "https://store.steampowered.com/app/413150/Stardew_Valley/"
+    },
+    {
+      "id": 24,
+      "title": "Half-Life: Alyx",
+      "description": "Half-Life: Alyx is a virtual reality first-person shooter game developed and published by Valve.",
+      "tags": ["VR", "Shooter", "Horror"],
+      "link": "https://store.steampowered.com/app/546560/HalfLife_Alyx/"
+    },
+    {
+        "id": 25,
+        "title": "Dota 2",
+        "description": "Dota 2 is a multiplayer online battle arena (MOBA) game developed and published by Valve.",
+        "tags": ["MOBA", "Multiplayer", "Strategy"],
+        "link": "https://store.steampowered.com/app/570/Dota_2/"
+      },
+      {
+        "id": 26,
+        "title": "Team Fortress 2",
+        "description": "Team Fortress 2 is a multiplayer first-person shooter game developed and published by Valve.",
+        "tags": ["Multiplayer", "Shooter", "Class-Based"],
+        "link": "https://store.steampowered.com/app/440/Team_Fortress_2/"
+      },
+      {
+        "id": 27,
+        "title": "Rainbow Six Siege",
+        "description": "Tom Clancy's Rainbow Six Siege is a tactical shooter game developed and published by Ubisoft.",
+        "tags": ["Tactical Shooter", "Multiplayer", "Strategy"],
+        "link": "https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/"
+      },
+      {
+        "id": 28,
+        "title": "The Forest",
+        "description": "The Forest is a survival horror game developed and published by Endnight Games.",
+        "tags": ["Survival", "Horror", "Open World"],
+        "link": "https://store.steampowered.com/app/242760/The_Forest/"
+      },
+      {
+        "id": 29,
+        "title": "ARK: Survival Evolved",
+        "description": "ARK: Survival Evolved is an action-adventure survival game developed and published by Studio Wildcard.",
+        "tags": ["Survival", "Adventure", "Open World"],
+        "link": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/"
+      },
+      {
+        "id": 30,
+        "title": "Left 4 Dead 2",
+        "description": "Left 4 Dead 2 is a cooperative first-person shooter game developed and published by Valve.",
+        "tags": ["Co-op", "Shooter", "Horror"],
+        "link": "https://store.steampowered.com/app/550/Left_4_Dead_2/"
+      },
+      {
+        "id": 31,
+        "title": "Resident Evil Village",
+        "description": "Resident Evil Village is a survival horror game developed and published by Capcom.",
+        "tags": ["Survival Horror", "Action", "Singleplayer"],
+        "link": "https://store.steampowered.com/app/1196590/Resident_Evil_Village/"
+      },
+      {
+        "id": 32,
+        "title": "The Sims 4",
+        "description": "The Sims 4 is a life simulation game developed by Maxis and published by Electronic Arts.",
+        "tags": ["Simulation", "Life", "Singleplayer"],
+        "link": "https://store.steampowered.com/app/1222670/The_Sims_4/"
+      },
+      {
+        "id": 33,
+        "title": "No Man's Sky",
+        "description": "No Man's Sky is a space exploration game developed and published by Hello Games.",
+        "tags": ["Space", "Exploration", "Open World"],
+        "link": "https://store.steampowered.com/app/275850/No_Mans_Sky/"
+      },
+      {
+        "id": 34,
+        "title": "Subnautica",
+        "description": "Subnautica is an open-world survival adventure game developed and published by Unknown Worlds Entertainment.",
+        "tags": ["Survival", "Adventure", "Open World"],
+        "link": "https://store.steampowered.com/app/264710/Subnautica/"
+      },
+      {
+        "id": 35,
+        "title": "Dead by Daylight",
+        "description": "Dead by Daylight is an asymmetric survival horror game developed by Behaviour Interactive.",
+        "tags": ["Survival Horror", "Multiplayer", "Indie"],
+        "link": "https://store.steampowered.com/app/381210/Dead_by_Daylight/"
+      },
+      {
+        "id": 36,
+        "title": "Borderlands 3",
+        "description": "Borderlands 3 is a first-person shooter looter game developed by Gearbox Software.",
+        "tags": ["Shooter", "Looter", "Co-op"],
+        "link": "https://store.steampowered.com/app/397540/Borderlands_3/"
+      },
+      {
+        "id": 37,
+        "title": "Warframe",
+        "description": "Warframe is a cooperative free-to-play third-person shooter game developed and published by Digital Extremes.",
+        "tags": ["Shooter", "Co-op", "Free to Play"],
+        "link": "https://store.steampowered.com/app/230410/Warframe/"
+      },
+      {
+        "id": 38,
+        "title": "Halo: The Master Chief Collection",
+        "description": "Halo: The Master Chief Collection is a compilation of first-person shooter games developed by 343 Industries.",
+        "tags": ["Shooter", "Multiplayer", "Sci-Fi"],
+        "link": "https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/"
+      },
+      {
+        "id": 39,
+        "title": "Monster Hunter: World",
+        "description": "Monster Hunter: World is an action role-playing game developed and published by Capcom.",
+        "tags": ["Action", "RPG", "Co-op"],
+        "link": "https://store.steampowered.com/app/582010/Monster_Hunter_World/"
+      },
+      {
+        "id": 40,
+        "title": "Red Dead Redemption 2",
+        "description": "Red Dead Redemption 2 is an action-adventure game developed and published by Rockstar Games.",
+        "tags": ["Action", "Adventure", "Open World"],
+        "link": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
+      },
+      {
+        "id": 41,
+        "title": "Assassin's Creed Valhalla",
+        "description": "Assassin's Creed Valhalla is an action role-playing game developed and published by Ubisoft.",
+        "tags": ["Action", "RPG", "Open World"],
+        "link": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
+      },
+      {
+        "id": 42,
+        "title": "Fallout 4",
+        "description": "Fallout 4 is an action role-playing game developed by Bethesda Game Studios and published by Bethesda Softworks.",
+        "tags": ["Action", "RPG", "Open World"],
+        "link": "https://store.steampowered.com/app/377160/Fallout_4/"
+      },
+      {
+        "id": 43,
+        "title": "The Elder Scrolls Online",
+        "description": "The Elder Scrolls Online is a massively multiplayer online role-playing game developed by ZeniMax Online Studios.",
+        "tags": ["MMORPG", "Open World", "Fantasy"],
+        "link": "https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/"
+      },
+      {
+        "id": 44,
+        "title": "Tom Clancy's Ghost Recon Breakpoint",
+        "description": "Tom Clancy's Ghost Recon Breakpoint is a tactical shooter video game developed by Ubisoft Paris and published by Ubisoft.",
+        "tags": ["Shooter", "Tactical", "Open World"],
+        "link": "https://store.steampowered.com/app/815370/Tom_Clancys_Ghost_Recon_Breakpoint/"
+      },
+      {
+        "id": 45,
+        "title": "DOOM",
+        "description": "DOOM is a first-person shooter game developed by id Software and published by Bethesda Softworks.",
+        "tags": ["Shooter", "Action", "Singleplayer"],
+        "link": "https://store.steampowered.com/app/379720/DOOM/"
+      },
+      {
+        "id": 46,
+        "title": "The Witcher 2: Assassins of Kings",
+        "description": "The Witcher 2: Assassins of Kings is an action role-playing game developed by CD Projekt Red.",
+        "tags": ["Action", "RPG", "Fantasy"],
+        "link": "https://store.steampowered.com/app/20920/The_Witcher_2_Assassins_of_Kings_Enhanced_Edition/"
+      },
+      {
+        "id": 47,
+        "title": "Dark Souls III",
+        "description": "Dark Souls III is an action role-playing game developed by FromSoftware and published by Bandai Namco Entertainment.",
+        "tags": ["Action", "RPG", "Dark Fantasy"],
+        "link": "https://store.steampowered.com/app/374320/DARK_SOULS_III/"
+      },
+      {
+        "id": 48,
+        "title": "Sekiro: Shadows Die Twice",
+        "description": "Sekiro: Shadows Die Twice is an action-adventure game developed by FromSoftware and published by Activision.",
+        "tags": ["Action", "Adventure", "Ninja"],
+        "link": "https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice/"
+      },
+      {
+        "id": 49,
+        "title": "Resident Evil 2",
+        "description": "Resident Evil 2 is a survival horror game developed and published by Capcom.",
+        "tags": ["Survival Horror", "Action", "Zombies"],
+        "link": "https://store.steampowered.com/app/883710/RESIDENT_EVIL_2__BIOHAZARD_RE2/"
+      },
+      {
+        "id": 50,
+        "title": "Control",
+        "description": "Control is an action-adventure game developed by Remedy Entertainment and published by 505 Games.",
+        "tags": ["Action", "Adventure", "Supernatural"],
+        "link": "https://store.steampowered.com/app/870780/Control_Ultimate_Edition/"
+      },
+      {
+        "id": 51,
+        "title": "Monster Hunter: Rise",
+        "description": "Monster Hunter: Rise is an action role-playing game developed and published by Capcom.",
+        "tags": ["Action", "RPG", "Co-op"],
+        "link": "https://store.steampowered.com/app/1633320/Monster_Hunter_Rise/"
+      },
+      {
+        "id": 52,
+        "title": "The Outer Worlds",
+        "description": "The Outer Worlds is an action role-playing game developed by Obsidian Entertainment and published by Private Division.",
+        "tags": ["Action", "RPG", "Science Fiction"],
+        "link": "https://store.steampowered.com/app/578650/The_Outer_Worlds/"
+      },
+      {
+        "id": 53,
+        "title": "NieR: Automata",
+        "description": "NieR: Automata is an action role-playing game developed by PlatinumGames and published by Square Enix.",
+        "tags": ["Action", "RPG", "Sci-Fi"],
+        "link": "https://store.steampowered.com/app/524220/NieRAutomata/"
+      },
+      {
+        "id": 54,
+        "title": "Resident Evil 7: Biohazard",
+        "description": "Resident Evil 7: Biohazard is a survival horror game developed and published by Capcom.",
+        "tags": ["Survival Horror", "Action", "First-Person"],
+        "link": "https://store.steampowered.com/app/418370/RESIDENT_EVIL_7_biohazard__BIOHAZARD_7_resident_evil/"
+      },
+      {
+        "id": 55,
+        "title": "Mortal Kombat 11",
+        "description": "Mortal Kombat 11 is a fighting game developed by NetherRealm Studios and published by Warner Bros. Interactive Entertainment.",
+        "tags": ["Fighting", "Action", "Multiplayer"],
+        "link": "https://store.steampowered.com/app/976310/Mortal_Kombat_11/"
+      },
+      {
+        "id": 56,
+        "title": "Batman: Arkham Knight",
+        "description": "Batman: Arkham Knight is an action-adventure game developed by Rocksteady Studios and published by Warner Bros. Interactive Entertainment.",
+        "tags": ["Action", "Adventure", "Superhero"],
+        "link": "https://store.steampowered.com/app/208650/Batman_Arkham_Knight/"
+      },
+      {
+        "id": 57,
+        "title": "Final Fantasy XV",
+        "description": "Final Fantasy XV is a role-playing game developed and published by Square Enix.",
+        "tags": ["RPG", "Adventure", "Fantasy"],
+        "link": "https://store.steampowered.com/app/637650/FINAL_FANTASY_XV_WINDOWS_EDITION/"
+      },
+      {
+        "id": 58,
+        "title": "Resident Evil 3",
+        "description": "Resident Evil 3 is a survival horror game developed and published by Capcom.",
+        "tags": ["Survival Horror", "Action", "Zombies"],
+        "link": "https://store.steampowered.com/app/952060/RESIDENT_EVIL_3/"
+      },
+      {
+        "id": 59,
+        "title": "Street Fighter V",
+        "description": "Street Fighter V is a fighting game developed and published by Capcom.",
+        "tags": ["Fighting", "Action", "Multiplayer"],
+        "link": "https://store.steampowered.com/app/310950/Street_Fighter_V/"
+      },
+      {
+        "id": 60,
+        "title": "Persona 4 Golden",
+        "description": "Persona 4 Golden is a role-playing game developed by Atlus and published by Sega.",
+        "tags": ["RPG", "Adventure", "Anime"],
+        "link": "https://store.steampowered.com/app/1113000/Persona_4_Golden/"
+      }
+
+  ]
+  

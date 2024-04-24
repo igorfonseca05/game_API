@@ -1,0 +1,45 @@
+### acessando API via get
+GET http://localhost:3000/
+###
+### acessando endPoint e obtendo dados da base de dados Produtdos via get
+GET http://localhost:3000/produtos/7
+###
+PUT http://localhost:3000/produtos/7/name/celular
+###
+
+GET http://localhost:3000/mongo
+###
+
+GET http://localhost:3000/games
+###
+###
+
+GET http://localhost:3000/games/6628fe7f64f1256698dfa10a
+###
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+  "name": "New Game",
+  "description": "This is a new game added to the collection.",
+  "tags": ["New", "Exciting", "Adventure"],
+  "platform": ["PC", "PlayStation", "Xbox"],
+  "steam_link": "https://store.steampowered.com/app/NEW_GAME/",
+  "price": "R$ 49.99"
+}
+###
+DELETE http://localhost:3000/games/66293b0c40f144758d34415d
+###
+PUT http://localhost:3000/games/66293f5b64e70f742b9acd42
+Content-Type: application/json
+
+{
+  "name": "Marvel DC",
+  "description": "This is a new game added to the collection.",
+  "tags": ["New", "Exciting", "Adventure"],
+  "platform": ["PC", "PlayStation", "Xbox"],
+  "steam_link": "https://store.steampowered.com/app/NEW_GAME/",
+  "price": "R$ 250.00"
+}
+
+###

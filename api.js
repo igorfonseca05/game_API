@@ -7,6 +7,10 @@ const cors = require('cors')
 // Executando o express
 const app = express()
 global.app = app
+
+// Importando rotas
+const router = require('./routes/routes')
+
 // -------------------------------------------------------------------------------------
 // Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
 const corsOptions = {
@@ -14,11 +18,6 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions));
-
-
-
-// Importando rotas
-const router = require('./routes/routes')
 
 // Configurando função de resposta padrão para nossa API
 const functions = require('./inc/functions')

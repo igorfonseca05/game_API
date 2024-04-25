@@ -9,9 +9,13 @@ const app = express()
 global.app = app
 // -------------------------------------------------------------------------------------
 // Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
-const corsConfig = {origin: "http://localhost:5173/"};
+const corsOptions = {
+  origin: "http://127.0.0.1:5173",
+}
 
-app.use(cors(corsConfig))
+app.use(cors(corsOptions));
+
+
 
 // Importando rotas
 const router = require('./routes/routes')

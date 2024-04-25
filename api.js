@@ -12,7 +12,7 @@ global.app = app
 app.use(cors())
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173'); // Permitindo qualquer origem. Você pode substituir '*' pelo seu domínio específico.
+    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.1.0:5173'); // Permitindo qualquer origem. Você pode substituir '*' pelo seu domínio específico.
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Métodos permitidos
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Cabeçalhos permitidos
     if (req.method === 'OPTIONS') {

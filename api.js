@@ -7,6 +7,9 @@ const cors = require('cors')
 // Executando o express
 const app = express()
 global.app = app
+// -------------------------------------------------------------------------------------
+// Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
+app.use(cors())
 
 // Importando rotas
 const router = require('./routes/routes')
@@ -14,14 +17,6 @@ const router = require('./routes/routes')
 // Configurando função de resposta padrão para nossa API
 const functions = require('./inc/functions')
 
-// -------------------------------------------------------------------------------------
-// Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
-app.use(cors({
-    origin: "http://localhost:5173/", // use your actual domain name (or localhost), using * is not recommended
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
-    credentials: true
-}))
 
 // -------------------------------------------------------------------------------------
 // Habilitando enviar e receber json

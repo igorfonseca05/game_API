@@ -6,10 +6,19 @@ const cors = require('cors')
 
 // Executando o express
 const app = express()
- global.app = app
+global.app = app
 
+// -------------------------------------------------------------------------------------
+// Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
+app.use(cors())
+
+// -------------------------------------------------------------------------------------
+// Habilitando enviar e receber json
 app.use(express.json())
-app.use(express.urlencoded({extended: true}))
+
+// -------------------------------------------------------------------------------------
+// Parseando dados do corpo da requisição
+app.use(express.urlencoded({ extended: true }))
 
 // Importando rotas
 const router = require('./routes/routes')
@@ -30,13 +39,6 @@ app.use((req, res, next) => {
 
 // -------------------------------------------------------------------------------------
 // Abrindo servidor
-
-app.use((req, res, next) => {
-    res.locals.minha = 'oi'
-    next()
-})
-
-
 app.use(router)
 
 app.on('conectou', () => {
@@ -45,14 +47,4 @@ app.on('conectou', () => {
         console.log('Acesse em http://localhost:3000')
     })
 })
-
-// -------------------------------------------------------------------------------------
-// Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
-const corsOptions ={
-    origin:'*', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200,
- }
-
-app.use(cors(corsOptions))
 

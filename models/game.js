@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const functions = require('../inc/functions')
 
 // Criando conexão com a base de dados
-mongoose.connect(process.env.stringConnection)
+mongoose.connect(process.env.connection)
     .then(() => {
         global.app.emit('conectou')
         console.log('base conectada')

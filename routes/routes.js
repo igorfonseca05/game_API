@@ -20,6 +20,7 @@ router.get('/games', async (req, res) => {
 
     try {
         const dados = await game.find({}).lean().exec()
+        console.log(dados)
         res.json(functions.response('success', 'Dados obtidos com sucesso', dados.length, dados))
 
     } catch (error) {

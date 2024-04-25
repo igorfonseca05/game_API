@@ -1,2 +1,6 @@
 igorrfonseca27
 OnXNFs2Jywl0qB5T
+
+{
+    "rewrites": [{ "source": "/(.*)", "destination": "/"}]
+}

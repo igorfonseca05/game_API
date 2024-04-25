@@ -1,3 +1,4 @@
+require('dotenv').config()
 
 const mongoose = require('mongoose')
 
@@ -10,7 +11,7 @@ mongoose.connect(process.env.connection)
         console.log('base conectada')
     })
     .catch((erro) => {
-       return res.status(404).json(functions.response("Error", erro.message, 0, null))
+       console.log(erro.message)
     })
 
 

@@ -11,6 +11,17 @@ global.app = app
 // Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
 app.use(cors())
 
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Permitindo qualquer origem. Você pode substituir '*' pelo seu domínio específico.
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Métodos permitidos
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Cabeçalhos permitidos
+    if (req.method === 'OPTIONS') {
+        res.sendStatus(200); // Responde com 200 para solicitações OPTIONS
+    } else {
+        next();
+    }
+});
+
 // Importando rotas
 const router = require('./routes/routes')
 

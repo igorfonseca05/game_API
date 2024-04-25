@@ -9,7 +9,7 @@ const app = express()
 global.app = app
 // -------------------------------------------------------------------------------------
 // Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
-const corsConfig = {credential: true, origin: "http://localhost:3000"};
+const corsConfig = {credential: true, origin: "http://localhost:5173/"};
 
 app.use(cors(corsConfig))
 

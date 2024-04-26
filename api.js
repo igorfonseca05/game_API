@@ -17,6 +17,8 @@ const corsOptions = {
   origin: "http://localhost:5173/",
 }
 
+const oi = 'io'
+
 app.use(cors(corsOptions));
 
 // Configurando função de resposta padrão para nossa API

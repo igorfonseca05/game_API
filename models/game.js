@@ -9,7 +9,7 @@ mongoose.connect(process.env.MONGO_ATLAS_URL)
         console.log('base conectada')
     })
     .catch((erro) => {
-       res.render()
+       console.log(error.message)
     })
 
 

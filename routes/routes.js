@@ -10,6 +10,8 @@ const functions = require('../inc/functions')
 
 const { game } = require('../models/game')
 
+// console.log(game)
+
 // -------------------------------------------------------------------------------------
 // Routes
 router.get('/', (req, res) => {
@@ -20,6 +22,7 @@ router.get('/games', async (req, res) => {
 
     try {
         const dados = await game.find({}).lean().exec()
+
         res.json(functions.response('success', 'Dados obtidos com sucesso', dados.length, dados))
 
     } catch (error) {

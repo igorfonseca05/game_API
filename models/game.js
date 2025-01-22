@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGO_ATLAS_URL)
     .then(() => {
         global.app.emit('conectou')
-        console.log('base conectada')
+        console.log('base conectad')
     })
     .catch((erro) => {
         res.status(401).send({ message: "Error in the database connection" })

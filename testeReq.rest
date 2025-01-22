@@ -43,5 +43,5 @@ Content-Type: application/json
 }
 
 ###
-GET https://game-api-nwhu.vercel.app/games
+GET https://game-api-two.vercel.app/games
 ###

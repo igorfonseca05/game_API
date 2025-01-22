@@ -14,15 +14,19 @@ const router = require('./routes/routes')
 // -------------------------------------------------------------------------------------
 // Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
 const corsOptions = {
-  origin: "http://localhost:5173/",
+    origin: [
+        "http://localhost:3000", // Frontend em desenvolvimento
+        "https://sua-api.vercel.app", // API hospedada no Vercel
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"], // Métodos permitidos
+    credentials: 'include'
 }
-
-const oi = 'io'
 
 app.use(cors(corsOptions));
 
 // Configurando função de resposta padrão para nossa API
 const functions = require('./inc/functions')
+
 
 
 // -------------------------------------------------------------------------------------

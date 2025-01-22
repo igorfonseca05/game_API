@@ -1,15 +1,19 @@
 require('dotenv').config()
 
 const mongoose = require('mongoose')
+const Event = require('events')
+// const { error } = require('console')
+
+const dbEvents = new Event()
 
 // Criando conexão com a base de dados
 mongoose.connect(process.env.MONGO_ATLAS_URL)
     .then(() => {
-        global.app.emit('conectou')
-        console.log('base conectad')
+        dbEvents.emit('conectou')
+        console.log('base conectada')
     })
     .catch((erro) => {
-        res.status(401).send({ message: "Error in the database connection" })
+        console.log(erro.message)
     })
 
 
@@ -25,4 +29,4 @@ const gameShema = new mongoose.Schema({
 
 const game = mongoose.model('game', gameShema, "game")
 
-module.exports = game
+module.exports = { game, dbEvents }

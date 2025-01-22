@@ -11,6 +11,9 @@ global.app = app
 // Importando rotas
 const router = require('./routes/routes')
 
+// Evento de conexão com a base de dados
+const { dbEvents } = require('./models/game')
+
 // -------------------------------------------------------------------------------------
 // Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
 const corsOptions = {
@@ -53,7 +56,7 @@ app.use((req, res, next) => {
 // Abrindo servidor
 app.use(router)
 
-app.on('conectou', () => {
+dbEvents.on('conectou', () => {
     app.listen(3000, () => {
         console.log('servidor on!')
         console.log('Acesse em http://localhost:3000')

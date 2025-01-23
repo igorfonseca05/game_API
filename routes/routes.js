@@ -14,9 +14,9 @@ const { game } = require('../models/game')
 
 // -------------------------------------------------------------------------------------
 // Routes
-// router.get('/', (req, res) => {
-//     res.json(functions.response('succes', 'API is Running', 0, null))
-// })
+router.get('/', (req, res) => {
+    res.json(functions.response('success', 'API is Running, ao final da URL inclua /games', 0, null))
+})
 
 router.get('/games', async (req, res) => {
 

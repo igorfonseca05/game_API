@@ -24,6 +24,15 @@
             color: #fff;
         }
 
+        .nav_container {
+            display: flex;
+            width: 100vw;
+            position: fixed;
+            background-color: #252525;
+            /* background-color: rebeccapurple; */
+            z-index: 9;
+        }
+
         .hero {
             margin: 0 auto;
             position: relative;
@@ -34,12 +43,11 @@
             /* align-items: center; */
             /* justify-content: center; */
             /* text-align: center; */
-            /* background-color: #252525; */
+            background-color: #252525;
 
         }
 
         nav {
-            /* position: fixed; */
             margin: 0 auto !important;
             left: 0;
             right: 0;
@@ -49,7 +57,6 @@
             /* align-items: center; */
             padding: 20px 0;
             z-index: 10;
-            background-color: #1b1b1b;
 
         }
 
@@ -70,7 +77,7 @@
         .hero_text {
             /* margin: 6rem 0rem; */
             width: 80%;
-            margin: 8rem auto;
+            margin: 12rem auto;
         }
 
         .hero h1 {
@@ -101,7 +108,8 @@
         }
 
         section {
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -112,7 +120,7 @@
         }
 
         .routes {
-            width: 90%;
+            width: 100%;
             text-align: left;
         }
 
@@ -149,7 +157,7 @@
         }
 
         .code-area {
-            width: 90%;
+            width: 100%;
             /* background-color: #252525; */
             padding: 20px;
             border-radius: 5px;
@@ -221,9 +229,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="nav_container">
         <nav>
-            <a href="#">Steam API</a>
+            <a href="#" style="cursor: default; color: white;">Steam API</a>
             <a href="https://github.com/igorfonseca05" target="_blank">GitHub</a>
         </nav>
     </header>
@@ -241,7 +249,7 @@
     </div>
 
     <section>
-        <div class="code-area">
+        <div class="code-area page">
             <h2 class="sectionTitle">Tente isso</h2>
             <p>Execute este código em seu ambiente de desenvolvimento</p>
             <pre>
@@ -255,7 +263,7 @@
             <div>
             </div>
         </div>
-        <div class="routes">
+        <div class="routes page">
             <h2 class="sectionTitle">Routes</h2>
             <p>All HTTP methods are supported. You can use HTTP or HTTPS for your requests.</p>
             <table>

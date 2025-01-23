@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: #1b1b1b; */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100vw;
+    height: auto;
+}
+
+.image-container .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Escurece a imagem */
+    color: #fff;
+    /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.heroSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.heroSection p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}

@@ -2,6 +2,7 @@ require('dotenv').config()
 
 // implementando modulos
 const express = require('express')
+const path = require('path')
 const cors = require('cors')
 
 // Executando o express
@@ -35,7 +36,7 @@ const functions = require('./inc/functions')
 // -------------------------------------------------------------------------------------
 // Habilitando enviar e receber json
 app.use(express.json())
-
+app.use(express.static(path.join(__dirname, 'public')));
 // -------------------------------------------------------------------------------------
 // Parseando dados do corpo da requisição
 app.use(express.urlencoded({ extended: true }))

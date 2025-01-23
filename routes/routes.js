@@ -1,5 +1,6 @@
 
 const express = require('express')
+const path = require('path')
 
 const router = express.Router()
 
@@ -15,7 +16,9 @@ const { game } = require('../models/game')
 // -------------------------------------------------------------------------------------
 // Routes
 router.get('/', (req, res) => {
-    res.json(functions.response('success', 'API is Running, ao final da URL inclua /games', 0, null))
+    res.sendFile(path.join(__dirname, '../public', 'hero.html'));
+
+
 })
 
 router.get('/games', async (req, res) => {
@@ -44,7 +47,7 @@ router.get('/games/:id', getGame, async (req, res) => {
 })
 
 // Rota para postar dado na API
-router.post('/', async (req, res) => {
+router.post('/games', async (req, res) => {
 
     // Usando schema para obter dados
     const gameShema = new game({

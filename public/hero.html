@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script> -->
+
+    <title>API Home - Steam Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+        :root {
+            --colorOne: #135eed;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: #fff;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #252525;
+        }
+
+        .hero nav {
+            position: absolute;
+            top: 0;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .hero nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+        }
+
+        .hero nav a:hover {
+            color: var(--colorOne);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--colorOne);
+            font-family: "Oswald", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            /* font-style: normal; */
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            color: #ccc;
+        }
+
+        section {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #1b1b1b;
+            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+        }
+
+        section>div {
+            padding: 80px 0px;
+        }
+
+        .routes {
+            width: 90%;
+            text-align: left;
+        }
+
+        .routes h2 {
+            color: var(--colorOne);
+            margin-bottom: 10px;
+        }
+
+        .routes p {
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .routes table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .routes th,
+        .routes td {
+            padding: 10px;
+            border: 1px solid #444;
+        }
+
+        .routes th {
+            background-color: #252525;
+            color: var(--colorOne);
+        }
+
+        .routes td {
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+
+        .code-area {
+            width: 90%;
+            /* background-color: #252525; */
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            /* color: white; */
+        }
+
+        .sectionTitle {
+            width: 80%;
+            color: var(--colorOne);
+            margin-bottom: 10px;
+            text-align: start;
+            font-size: 32px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            text-align: center;
+            color: #999;
+        }
+
+        pre {
+            background-color: #2d2d2d !important;
+            /* Fundo escuro */
+            /* color: rgba(143, 36, 36, 0) !important; */
+            /* Cor do texto */
+            border-radius: 5px;
+            /* Borda arredondada */
+            /* padding: 5px !important; */
+            /* Padding para espaçamento */
+            /* overflow-x: auto; */
+            /* Permite rolar horizontalmente */
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: none !important;
+            color: white !important;
+            /* Fonte semelhante ao VS Code */
+        }
+
+        .language-javascript {
+            line-height: 25px !important;
+            padding: 0px !important;
+            /* width: 30% !important; */
+
+        }
+
+        code .operator {
+            background: none !important;
+            color: white !important;
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <a href="#">Steam API</a>
+            <a href="https://github.com/igorfonseca05" target="_blank">GitHub</a>
+        </nav>
+        <h1>Steam Project API</h1>
+        <h2>Your reliable API for managing and retrieving game data</h2>
+        <p>Base URL: https://game-c8okdbtwv-igorfonseca05s-projects.vercel.app</p>
+    </div>
+
+    <section>
+        <div class="code-area">
+            <h2 class="sectionTitle">Tente isso</h2>
+            <p>Execute este código em seu ambiente de desenvolvimento</p>
+            <pre>
+            <code class="language-javascript">
+                fetch('https://game-c8okdbtwv-igorfonseca05s-projects.vercel.app/games') <br>
+                           .then(response => response.json())
+                           .then(json => console.log(json));
+            </code>
+          </pre>
+
+            <div>
+            </div>
+        </div>
+        <div class="routes">
+            <h2 class="sectionTitle">Routes</h2>
+            <p>All HTTP methods are supported. You can use HTTP or HTTPS for your requests.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Endpoint</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GET</td>
+                        <td>/games</td>
+                    </tr>
+                    <tr>
+                        <td>GET</td>
+                        <td>/games/:id</td>
+                    </tr>
+                    <tr>
+                        <td>POST</td>
+                        <td>/games</td>
+                    </tr>
+                    <tr>
+                        <td>PUT</td>
+                        <td>/games/:id</td>
+                    </tr>
+                    <tr>
+                        <td>DELETE</td>
+                        <td>/games/:id</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <strong>Nota:</strong>
+                <p>Exemplos de uso dos endpoints acima pode ser visto no README.md em <a
+                        href="https://github.com/igorfonseca05/game_API" target="_blank">GitHub documentation</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Steam Project API. All rights reserved.</p>
+    </footer>
+</body>
+<!-- <script>
+    hljs.highlightAll();
+</script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+
+</html>

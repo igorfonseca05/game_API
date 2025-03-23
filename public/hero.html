@@ -7,258 +7,48 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css"> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script> -->
-
+    <link rel="stylesheet" href="hero.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap" rel="stylesheet">
     <title>API Home - Steam Project</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
-        :root {
-            --colorOne: #135eed;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1b1b1b;
-            /* background-position: left; */
-            color: #fff;
-        }
-
-        .nav_container {
-            display: flex;
-            width: 100vw;
-            position: fixed;
-            background-color: #252525;
-            /* background-color: rebeccapurple; */
-            z-index: 9;
-        }
-
-        .hero {
-            margin: 0 auto;
-            position: relative;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background-attachment: fixed;
-            /* align-items: center; */
-            /* justify-content: center; */
-            /* text-align: center; */
-            background-color: #252525;
-
-        }
-
-        nav {
-            margin: 0 auto !important;
-            left: 0;
-            right: 0;
-            width: 80%;
-            display: flex;
-            justify-content: space-between;
-            /* align-items: center; */
-            padding: 20px 0;
-            z-index: 10;
-
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            font-family: "Oswald", serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-        }
-
-        nav a:hover {
-            color: var(--colorOne);
-        }
-
-        .hero_text {
-            /* margin: 6rem 0rem; */
-            width: 80%;
-            margin: 10rem auto;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            color: var(--colorOne);
-            font-family: "Oswald", serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            margin: 0px;
-            /* font-style: normal; */
-        }
-
-        .hero h4 {
-            /* font-size: 1.5rem; */
-            color: #fff;
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
-
-        .hero p {
-            font-size: 1rem;
-            margin-top: 15px;
-            color: #fcfcfc;
-            background-color: rgba(255, 255, 255, 0.164);
-            width: 50%;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        section {
-            width: 80%;
-            margin: 0 auto;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #1b1b1b;
-            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
-        }
-
-        .routes {
-            width: 100%;
-            text-align: left;
-        }
-
-        .routes h2 {
-            color: var(--colorOne);
-            margin-bottom: 10px;
-        }
-
-        .routes p {
-            margin-bottom: 20px;
-            color: #ccc;
-        }
-
-        .routes table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        .routes th,
-        .routes td {
-            padding: 10px;
-            border: 1px solid #444;
-        }
-
-        .routes th {
-            background-color: #252525;
-            color: var(--colorOne);
-        }
-
-        .routes td {
-            background-color: #1e1e1e;
-            color: #fff;
-        }
-
-        .code-area {
-            width: 100%;
-            /* background-color: #252525; */
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-            /* color: white; */
-        }
-
-        .sectionTitle {
-            width: 80%;
-            color: var(--colorOne);
-            margin-bottom: 10px;
-            text-align: start;
-            font-size: 32px;
-        }
-
-        footer {
-            margin-top: 20px;
-            font-size: 0.9rem;
-            text-align: center;
-            color: #999;
-        }
-
-        pre {
-            background-color: #2d2d2d !important;
-            /* Fundo escuro */
-            /* color: rgba(143, 36, 36, 0) !important; */
-            /* Cor do texto */
-            border-radius: 5px;
-            /* Borda arredondada */
-            /* padding: 5px !important; */
-            /* Padding para espaçamento */
-            /* overflow-x: auto; */
-            /* Permite rolar horizontalmente */
-        }
-
-        code {
-            font-family: 'Courier New', Courier, monospace;
-            text-shadow: none !important;
-            color: white !important;
-            /* Fonte semelhante ao VS Code */
-        }
-
-        .language-javascript {
-            line-height: 25px !important;
-            padding: 0px !important;
-            /* width: 30% !important; */
-
-        }
-
-        code .operator {
-            background: none !important;
-            color: white !important;
-        }
-
-        figure {
-            position: absolute;
-            width: 50%;
-            /* height: 200px; */
-        }
-
-        figure img {
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-        }
-    </style>
-
-    </style>
 </head>
 
 <body>
     <header class="nav_container">
         <nav>
-            <a href="#" style="cursor: default; color: white;">Steam API</a>
+            <a href="#" style="cursor: default; color: white;">API</a>
             <a href="https://github.com/igorfonseca05" target="_blank">GitHub</a>
         </nav>
     </header>
     <div class="hero">
         <div class="hero_text">
-            <h1>Bem vindo a <br> Steam store API</h1>
-            <h4>Obtenha informações de jogos disponíveis na loja Steam grátis </h4>
-            <p><strong>Base URL:</strong>
+            <div class="main_text">
+                <span class="textAbove">Bem vindo</span>
+                <h1>Game API</h1>
+            </div>
+            <p class="basetext"><strong>Base URL:</strong>
                 https://game-c8okdbtwv-igorfonseca05s-projects.vercel.app
             </p>
         </div>
-        <!-- <figure>
-            <img src="img/heroImage.jpg" alt="">
-        </figure> -->
+        <figure>
+            <img src="https://artfiles.alphacoders.com/858/85847.png" alt="">
+        </figure>
     </div>
 
     <section>
         <div class="code-area page">
             <h2 class="sectionTitle">Tente isso</h2>
             <p>Execute este código em seu ambiente de desenvolvimento</p>
-            <pre>
-            <code class="language-javascript">
-                fetch('https://game-c8okdbtwv-igorfonseca05s-projects.vercel.app/games') <br>
-                           .then(response => response.json())
-                           .then(json => console.log(json));
-            </code>
-          </pre>
+            <div class="codeContainer">
+                <pre>
+                    <code class="language-javascript">
+                        fetch('https://game-c8okdbtwv-igorfonseca05s-projects.vercel.app/games') <br>
+                                   .then(response => response.json())
+                                   .then(json => console.log(json));
+                    </code>
+                  </pre>
+            </div>
 
             <div>
             </div>

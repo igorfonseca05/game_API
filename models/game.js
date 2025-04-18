@@ -7,7 +7,7 @@ const Event = require('events')
 const dbEvents = new Event()
 
 // Criando conexão com a base de dados
-mongoose.connect(process.env.MONGO_ATLAS_URL)
+mongoose.connect(process.env.stringConnection)
     .then(() => {
         dbEvents.emit('conectou')
         console.log('base conectada')

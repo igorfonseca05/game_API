@@ -14,7 +14,7 @@
   "version": "1.0.0",
   "main": "api.js",
   "scripts": {
-    "start": "nodemon api.js"
+    "server": "nodemon api.js"
   },
   "author": "igor",
   "license": "MIT",

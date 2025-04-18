@@ -13,7 +13,7 @@ global.app = app
 const router = require('./routes/routes')
 
 // Evento de conexão com a base de dados
-const { dbEvents } = require('./models/game')
+const { dbEvents, closeConnection } = require('./models/game')
 
 // -------------------------------------------------------------------------------------
 // Carregando o cors para podemos obter requisições a nossa API de qualquer origem/dominio
@@ -56,6 +56,12 @@ app.use((req, res, next) => {
 // -------------------------------------------------------------------------------------
 // Abrindo servidor
 app.use(router)
+
+
+process.on("SIGINT", async () => {
+    await closeConnection()
+    process.exit(0)
+})
 
 dbEvents.on('conectou', () => {
     app.listen(3000, () => {

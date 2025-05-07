@@ -4,7 +4,7 @@
 ## Proposta da API
 Esta API foi desenvolvida para gerenciar um catálogo de jogos, permitindo listar, adicionar, atualizar e excluir registros de jogos armazenados em um banco de dados MongoDB. Ela pode ser utilizada para integrar sistemas que necessitam de um gerenciamento dinâmico de jogos.
 
-[![Static Badge](https://img.shields.io/badge/Acesse_aqui-yellow?style=for-the-badge)](https://game-ay28botmr-igorfonseca05s-projects.vercel.app/)
+[![Static Badge](https://img.shields.io/badge/Acesse_aqui-yellow?style=for-the-badge)](https://game-api-igorfonseca05s-projects.vercel.app/)
 
 ## Endpoints
 

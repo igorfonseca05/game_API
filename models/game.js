@@ -11,7 +11,7 @@ let connection
 // Criando conexão com a base de dados
 function connectDB() {
     if (!connection) {
-        connection = mongoose.connect(process.env.stringConnection)
+        connection = mongoose.connect(process.env.MONGO_ATLAS_URL)
             .then(() => {
                 dbEvents.emit('conectou')
                 console.log('base conectada')

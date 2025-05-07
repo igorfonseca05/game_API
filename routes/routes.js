@@ -18,7 +18,6 @@ const { game } = require('../models/game')
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'hero.html'));
 
-
 })
 
 router.get('/games', async (req, res) => {

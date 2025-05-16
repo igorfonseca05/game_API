@@ -43,5 +43,6 @@ Content-Type: application/json
 }
 
 ###
-GET https://game-api-two.vercel.app/games
+GET http://localhost:3000/games/param
+Content-Type: application/json
 ###

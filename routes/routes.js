@@ -13,6 +13,9 @@ const { game } = require('../models/game')
 
 // console.log(game)
 
+
+
+
 // -------------------------------------------------------------------------------------
 // Routes
 router.get('/', (req, res) => {
@@ -21,9 +24,8 @@ router.get('/', (req, res) => {
 })
 
 router.get('/games', async (req, res) => {
-
     try {
-        const dados = await game.find({}).lean().exec()
+        const dados = await game.find(req.query).lean().exec()
 
         res.json(functions.response('success', 'Dados obtidos com sucesso', dados.length, dados))
 
@@ -90,6 +92,7 @@ router.delete('/games/:id', getGame, async (req, res) => {
 })
 
 
+
 // Função de middleware para verificar se elemento com o id especificado existe
 async function getGame(req, res, next) {
     try {
@@ -105,6 +108,7 @@ async function getGame(req, res, next) {
 
     next()
 }
+
 
 
 
